@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Rodrigues (Mine site)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h1>Felipe Rodrigues</h1>
+            <nav>
+                <ul id="CardsTitles">
+                    <li onclick="ChangeCard(0)" ondblclick="CloseWindow()" class="selected">Home</li>
+                    <li onclick="ChangeCard(1)" ondblclick="CloseWindow()">Sobre min</li>
+                    <li onclick="ChangeCard(2)" ondblclick="CloseWindow()">Acadêmico</li>
+                    <li onclick="ChangeCard(3)" ondblclick="CloseWindow()">Profissional</li>
+                    <li onclick="ChangeCard(4)" ondblclick="CloseWindow()">Contato</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="CardsContainer">
+
+            <div class="CardInfo" draggable="true">
+                <div class="CardHeader">
+                    <h2>Home</h2>
+                    <i class="fa-solid fa-square-xmark" onclick="CloseWindow()"></i>
+                </div>
+                <div class="CardContent">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <nav>
+                        <ul>
+                            <li>Bloco de entrada [Completo]</li>
+                            <li>Bloco de Front-End [Em Andamento]</li>
+                        </ul>
+                    </nav>
+                    <p id="Tema">Tema inspirado no Windows XP</p>
+                </div>
+            </div>
+
+            <div class="CardInfo hide" draggable="true">
+                <div class="CardHeader">
+                    <h2>Sobre min</h2>
+                    <i class="fa-solid fa-square-xmark" onclick="CloseWindow()"></i>
+                </div>
+                <div class="CardContent">
+                    <h3>Olá me chamo Felipe!</h3>
+                    <p>
+                        Estou estudando Análise e Desenvolvimento de Sistemas no instituto Infnet, tenho experiência com desenvolvimento de jogos em Unity e C-Sharp. Estou ansioso para aprender mais sobre Front-End neste bloco, já domino bem HTML, CSS e JavaScript.
+                    </p>
+                    <p>
+                        No bloco anterior estudei sobre Interatividade em paginas web, sobre manipulação do DOM, objetos, remove e definir atributos, eventos, manipulação de classes, this, responsividade, iterações, funções de seta, função anônima, funções recursivas, pilhas e arrays. 
+                    </p>
+                    <p>
+                        Gosto bastante de jogos, tenho alguns games feito com a Unity Engine. Entre eles <a href="https://felipehunter.itch.io/dino-island-the-four-crystals" target="_blank">Dino Island The Four Crystals</a> que está na 1° pagina com tag '<a href="https://itch.io/games/tag-mega-drive" target="_blank">megadrive</a>' no <a href="https://itch.io/" target="_blank">itch.io</a>. Mais jogos <a href="https://felipehunter.itch.io" target="_blank">@felipehunter</a>
+                    </p>
+                    <br/>
+                    <nav>
+                        <p>Outras Informações:</p>
+                        <ul>
+                            <li>Origem: Petrolina - PE</li>
+                            <li>Atualmente: Embu Das Artes - SP</li>
+                            <li>Idade: 22 anos</li>
+                            <li>Profissão: Recepcionista Bilíngue</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="CardInfo hide" draggable="true">
+                <div class="CardHeader">
+                    <h2>Acadêmico</h2>
+                    <i class="fa-solid fa-square-xmark" onclick="CloseWindow()"></i>
+                </div>
+                <div class="CardContent">
+                    <h3>Cursos e Formação Acadêmica</h3>
+
+                    <br/>
+    
+                    <nav>
+                        <p>Formação Acadêmica:</p>
+                        <ul>
+                            <li>Ensino Médio Completo</li>
+                            <li>INFNET - Análise e Desenvolvimento de Sistemas (04/2023)</li>
+                        </ul>
+                    </nav>
+                    
+                    <br/>
+    
+                    <nav>
+                        <p>Cursos:</p>
+                        <ul>
+                            <li>C# POO - Udemy (Em andamento)</li>
+                            <li>MySql (Em andamento)</li>
+                            <li>C/C++ - Udemy (Completo)</li>
+                            <li>HTML 5, Curso em Vídeo - Gustavo Guanabara (Completo)</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="CardInfo hide" draggable="true">
+                <div class="CardHeader">
+                    <h2>Profissional</h2>
+                    <i class="fa-solid fa-square-xmark" onclick="CloseWindow()"></i>
+                </div>
+                <div class="CardContent">
+                    <h3>Experiência Profissional</h3>
+                    <nav>
+                        <ul>
+                            <li>Desenvolvedor de jogos independente (2018 - Atual)</li>
+                            <li>Recepcionista Bilíngue - Itau BBA - Verzani & Sandrini (2022 - Atual)</li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="CardInfo hide" draggable="true">
+                <div class="CardHeader">
+                    <h2>Contato</h2>
+                    <i class="fa-solid fa-square-xmark" onclick="CloseWindow()"></i>
+                </div>
+                <div class="CardContent">
+                    <h3>Entre em contato</h3>
+                    <p>
+                        Aberto a novas oportunidades.
+                    </p>
+                    <nav>
+                        <ul style="list-style: none;">
+                            <li><a href="https://github.com/FeHunter" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/felipe-rodrigues-silver/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="mailto:hunterfe1111@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> E-mail</a></li>
+                            <li><a href="https://www.instagram.com/felipehunter_dev/" target="_blank"><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
+                            <li><a href="https://twitter.com/FelipeHunterfe" target="_blank"><i class="fa-brands fa-square-x-twitter"></i> X (Twitter)</a></li>
+                            <li><a href="https://felipehunter.itch.io" target="_blank"><i class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="CardInfo hide">
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
